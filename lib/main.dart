@@ -87,6 +87,33 @@ class SecondScreen extends StatelessWidget {
         title: new Text('Second Screen'),
         backgroundColor: Colors.red,
       ),
+      //body: Image.asset('assets/images/location.png'),
+      body: new Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: <Widget>[
+          new Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              new Icon(Icons.apps, color: Colors.green, size: 40.0,),
+              new Text('Apps')
+            ],
+          ),
+          new Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              new Icon(Icons.add_a_photo, color: Colors.green, size: 40.0,),
+              new Text('Galeri')
+            ],
+          ),
+          new Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              new Icon(Icons.alarm, color: Colors.green, size: 40.0,),
+              new Text('Alarm')
+            ],
+          ),
+        ],
+      ),
 
       //bottom menu
       bottomNavigationBar: BottomNavigationBar(currentIndex: 0, items: [
